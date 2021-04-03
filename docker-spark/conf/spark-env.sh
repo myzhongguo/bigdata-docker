@@ -16,7 +16,7 @@
 # - SPARK_CLASSPATH, default classpath entries to append
 # - SPARK_LOCAL_DIRS, storage directories to use on this node for shuffle and RDD data
 # - MESOS_NATIVE_LIBRARY, to point to your libmesos.so if you use Mesos
-export JAVA_HOME=/usr/local/jdk1.7
+export JAVA_HOME=/usr/local/jdk1.8
 export HADOOP_HOME=/usr/local/hadoop
 export SPARK_DIST_CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath)
 export SPARK_LOCAL_DIRS=/works/spark

@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:7
 MAINTAINER tonywell <tongwei1985@gmail.com>
 
 # root password
@@ -25,15 +25,15 @@ RUN sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config
 
 RUN mkdir /var/run/sshd
 
-RUN wget http://119.254.110.32:8081/download/jdk1.7.0_60.tar.gz && \
-       tar -zxvf jdk1.7.0_60.tar.gz -C /usr/local/ && \
-       rm -rf jdk1.7.0_60.tar.gz
+RUN wget http://mypicbed.top:8020/jdk/jdk-8u161-linux-x64.tar.gz && \
+       tar -zxvf jdk-8u161-linux-x64.tar.gz -C /usr/local/ && \
+       rm -rf jdk-8u161-linux-x64.tar.gz
 
 #ADD ./jdk1.7.0_60.tar.gz /usr/local/
 
-RUN mv /usr/local/jdk1.7.0_60 /usr/local/jdk1.7
+RUN mv /usr/local/jdk1.8.0_161 /usr/local/jdk1.8
 
-ENV JAVA_HOME /usr/local/jdk1.7
+ENV JAVA_HOME /usr/local/jdk1.8
 ENV PATH $JAVA_HOME/bin:$PATH
 
 EXPOSE 22

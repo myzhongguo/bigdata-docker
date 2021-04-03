@@ -73,7 +73,7 @@
 
 <property>
 <name>mapreduce.jobtracker.jobhistory.location</name>
-<value>/root/hadoop-2.7.2/logs/history</value>
+<value>/root/hadoop-3.2.2/logs/history</value>
 </property> 
 
 <property>

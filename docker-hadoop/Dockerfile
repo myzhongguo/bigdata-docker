@@ -4,10 +4,10 @@ MAINTAINER tonywell
 RUN yum -y install which && yum clean all
 
 #下载Hadoop
-RUN wget http://www.eu.apache.org/dist/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz && \
-        tar -zvxf hadoop-2.7.1.tar.gz -C /usr/local/ && \
-        mv /usr/local/hadoop-2.7.1 /usr/local/hadoop && \
-        rm -rf hadoop-2.7.1.tar.gz
+RUN wget https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz && \
+        tar -zvxf hadoop-3.2.2.tar.gz -C /usr/local/ && \
+        mv /usr/local/hadoop-3.2.2 /usr/local/hadoop && \
+        rm -rf hadoop-3.2.2.tar.gz
 
 ENV HADOOP_HOME /usr/local/hadoop
 ENV HADOOP_PREFIX /usr/local/hadoop
