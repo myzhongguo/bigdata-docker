@@ -62,7 +62,7 @@ $ docker-compose -f docker-compose-mysql.yml up -d
 
 ```
 $ docker exec -it hadoop-mysql bash
-$ cd /usr/local/mysql-5.6.29/bin
+$ cd /usr/local/mysql-5.7.32-el7-x86_64/bin
 $ ./mysql -u root -p
 #默认密码为空，回车即可
 $ mysql> use mysql;
