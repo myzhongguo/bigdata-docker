@@ -1,9 +1,7 @@
 hadoop-mysql:
    image: tonywell/docker-mysql
    container_name: hadoop-mysql
-   volumes:
-     - ./data:/usr/local/mysql-5.7.32/data
+   privileged: true
    net: zoo
-   command: /usr/local/mysql-5.7.32/bin/mysqld_safe --user=mysql
    ports: 
      - "3306:3306"
