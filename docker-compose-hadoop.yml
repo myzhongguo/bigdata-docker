@@ -23,7 +23,7 @@ hadoop-master:
      - ./docker-hadoop/conf:/usr/local/hadoop/etc/hadoop
    net: zoo
    ports:
-     - "50070:50070"
+     - "9870:9870"
      - "8088:8088"
    links:
      - hadoop-slave1

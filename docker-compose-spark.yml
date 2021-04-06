@@ -31,7 +31,7 @@ hadoop-master:
      - ./docker-spark/conf:/usr/local/spark/conf
    net: zoo
    ports:
-     - "50070:50070"
+     - "9870:9870"
      - "9083:9083"
      - "8088:8088"
      - "8080:8080"

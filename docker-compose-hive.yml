@@ -27,7 +27,7 @@ hadoop-master:
      - ./docker-hive/conf:/usr/local/hive/conf
    net: zoo
    ports:
-     - "50070:50070"
+     - "9870:9870"
      - "9083:9083"
      - "8088:8088"
    links:
