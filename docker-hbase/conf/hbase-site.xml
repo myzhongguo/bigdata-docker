@@ -32,7 +32,15 @@
 	<!--指定各种端口号 -->
 	<property>
 		<name>hbase.master.port</name>
+		<value>60000</value>
+	</property>
+	<property>
+		<name>hbase.master.info.port</name>
 		<value>16010</value>
+	</property>
+	<property>
+		<name>hbase.regionserver.info.port</name>
+		<value>60011</value>
 	</property>
 	<property>
 		<name>hbase.cluster.distributed</name>

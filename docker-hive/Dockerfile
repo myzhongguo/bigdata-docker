@@ -4,10 +4,10 @@ MAINTAINER tonywell <tongwei1985@gmail.com>
 
 ENV HIVE_HOME=/usr/local/hive
 
-RUN wget https://mirrors.bfsu.edu.cn/apache/hive/hive-2.3.8/apache-hive-2.3.8-bin.tar.gz && \
-     tar -zvxf apache-hive-2.3.8-bin.tar.gz -C /usr/local/ && \
-     mv /usr/local/apache-hive-2.3.8-bin /usr/local/hive && \
-     rm apache-hive-2.3.8-bin.tar.gz
+RUN wget https://mirrors.bfsu.edu.cn/apache/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz && \
+     tar -zvxf apache-hive-3.1.2-bin.tar.gz -C /usr/local/ && \
+     mv /usr/local/apache-hive-3.1.2-bin /usr/local/hive && \
+     rm apache-hive-3.1.2-bin.tar.gz
 
 RUN wget http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.39.tar.gz && \
     tar -zvxf mysql-connector-java-5.1.39.tar.gz -C /usr/local/ && \

@@ -66,5 +66,5 @@ volumes:
     driver: local
 
 networks:
-  elastic:
+  zoo:
     driver: bridge

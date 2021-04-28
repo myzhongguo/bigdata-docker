@@ -6,10 +6,10 @@ ENV HBASE_HOME=/usr/local/hbase
 ENV PATH=$PATH:$HBASE_HOME/bin
 
 #RUN wget http://archive.apache.org/dist/hbase/1.1.2/hbase-1.1.2-bin.tar.gz && \
-RUN wget https://mirrors.tuna.tsinghua.edu.cn/apache/hbase/2.4.2/hbase-2.4.2-bin.tar.gz && \
-	tar -xzvf hbase-2.4.2-bin.tar.gz -C /usr/local/ && \
-        mv /usr/local/hbase-2.4.2 $HBASE_HOME && \
-	rm -rf hbase-2.4.2-bin.tar.gz
+RUN wget https://mirrors.bfsu.edu.cn/apache/hbase/stable/hbase-2.3.5-bin.tar.gz && \
+	tar -xzvf hbase-2.3.5-bin.tar.gz -C /usr/local/ && \
+        mv /usr/local/hbase-2.3.5 $HBASE_HOME && \
+	rm -rf hbase-2.3.5-bin.tar.gz
 
 # Hdfs ports
 EXPOSE 9000 50010 50020 50070 50075 50090

@@ -166,7 +166,13 @@ $ sh /usr/local/hbase/bin/start-hbase.sh
 ```
 
 
-
-
+# 启动顺序及命令：
+```
+hadoop: sbin/start-all.sh
+hive: nohup hive --service metastore & 
+nohup hiveserver2 &
+spark: sbin/start-all.sh
+hbase: bin/start-hbase.sh
+```
 
 注意docker-compose-hadoop.yml、docker-compose-hive.yml、docker-compose-spark.yml和docker-compose-hbase.yml不要一起启动，后面模板中是包含了前一个的所有配置
