@@ -3,3 +3,4 @@ data
 **/zookeeper_server.pid
 .idea
 .data
+.es
