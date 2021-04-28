@@ -387,7 +387,7 @@
 
   <property>
     <name>javax.jdo.option.ConnectionPassword</name>
-    <value>1234qwer</value>
+    <value>123456</value>
     <description>password to use against metastore database</description>
   </property>
 
@@ -1000,7 +1000,7 @@
   </property>
   <property>
     <name>hive.groupby.skewindata</name>
-    <value>false</value>
+    <value>true</value>
     <description>Whether there is skew in data to optimize group by queries</description>
   </property>
   <property>

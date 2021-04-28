@@ -51,6 +51,6 @@ MAINTAINER liu
 # 设置root初始化密码
 ENV MYSQL_ROOT_PASSWORD=123456
 # 设置mysql字符集
-ADD mysql.cnf /etc/mysql/mysql.conf.d/my.cnf
+ADD my.cnf /etc/mysql/mysql.conf.d/my.cnf
 
 EXPOSE 3306

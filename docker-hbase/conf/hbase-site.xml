@@ -29,6 +29,11 @@
 		<name>hbase.zookeeper.quorum</name>
 		<value>zk1,zk2,z3</value>
 	</property>
+	<!--指定各种端口号 -->
+	<property>
+		<name>hbase.master.port</name>
+		<value>16010</value>
+	</property>
 	<property>
 		<name>hbase.cluster.distributed</name>
 		<value>true</value>

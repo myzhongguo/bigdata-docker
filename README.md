@@ -101,7 +101,7 @@ $ cd /usr/local/hadoop/sbin
 $ ./start-all.sh
 ```
 
- 访问http://localhost:50070，看集群是否启动成功
+ 访问http://localhost:9870，看集群是否启动成功
 
 ##### b）启动Hive集群
 

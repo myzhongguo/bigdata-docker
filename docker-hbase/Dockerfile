@@ -14,7 +14,7 @@ RUN wget https://mirrors.tuna.tsinghua.edu.cn/apache/hbase/2.4.2/hbase-2.4.2-bin
 # Hdfs ports
 EXPOSE 9000 50010 50020 50070 50075 50090
 # See https://issues.apache.org/jira/browse/HDFS-9427
-EXPOSE 9871 9870 9820 9869 9868 9867 9866 9865 9864
+EXPOSE 9871 9870 9820 9869 9868 9867 9866 9865 9864 8020
 # Mapred ports
 EXPOSE 19888
 #Yarn ports
