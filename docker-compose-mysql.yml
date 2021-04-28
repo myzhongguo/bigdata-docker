@@ -3,5 +3,7 @@ hadoop-mysql:
    container_name: hadoop-mysql
    privileged: true
    net: zoo
+   volumes:
+      - ./data:/usr/local/mysql/data
    ports: 
      - "3306:3306"

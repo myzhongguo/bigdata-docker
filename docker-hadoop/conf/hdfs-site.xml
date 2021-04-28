@@ -16,7 +16,7 @@
 
 <property>
 <name>dfs.namenode.secondary.http-address</name>
-<value>hadoop-master:50090</value>
+<value>hadoop-master:9868</value>
 </property>
 
 <property>

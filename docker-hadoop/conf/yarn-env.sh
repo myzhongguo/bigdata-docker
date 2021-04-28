@@ -14,8 +14,8 @@
 # limitations under the License.
 
 # User for YARN daemons
-export HADOOP_YARN_USER=${HADOOP_YARN_USER:-yarn}
-
+#export HADOOP_YARN_USER=${HADOOP_YARN_USER:-yarn}
+export HADOOP_YARN_USER=${HADOOP_YARN_USER:-root}
 export HDFS_DATANODE_USER=root
 export HDFS_NAMENODE_USER=root
 export HDFS_SECONDARYNAMENODE_USER=root
@@ -23,7 +23,8 @@ export YARN_RESOURCEMANAGER_USER=root
 export YARN_NODEMANAGER_USER=root
 
 # resolve links - $0 may be a softlink
-export YARN_CONF_DIR="${YARN_CONF_DIR:-$HADOOP_YARN_HOME/conf}"
+#export YARN_CONF_DIR="${YARN_CONF_DIR:-$HADOOP_YARN_HOME/conf}"
+export YARN_CONF_DIR="${YARN_CONF_DIR:-$HADOOP_YARN_HOME/etc/hadoop}"
 
 # some Java parameters
 # export JAVA_HOME=/home/y/libexec/jdk1.6.0/

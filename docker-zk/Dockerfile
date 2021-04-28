@@ -1,6 +1,6 @@
 FROM tonywell/centos-java
 
-RUN wget https://mirrors.bfsu.edu.cn/apache/zookeeper/stable/apache-zookeeper-3.6.2-bin.tar.gz && \
+RUN wget http://archive.apache.org/dist/zookeeper/zookeeper-3.6.2/apache-zookeeper-3.6.2-bin.tar.gz && \
       tar -zvxf apache-zookeeper-3.6.2-bin.tar.gz -C /opt/ && \
       mv /opt/apache-zookeeper-3.6.2-bin /opt/zookeeper && \
       rm apache-zookeeper-3.6.2-bin.tar.gz
